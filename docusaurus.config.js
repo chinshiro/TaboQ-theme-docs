@@ -23,7 +23,7 @@ module.exports = {
 
   themeConfig: {
     navbar: {
-      title: 'TaboQ Docs',
+      title: 'TaboQ Theme',
       items: [
         {
           type: 'doc',
