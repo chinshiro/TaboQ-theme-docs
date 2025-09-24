@@ -1,31 +1,46 @@
 module.exports = {
-  title: "TaboQ Theme Documentation",
-  url: "https://docs.taboq.com", // ← 替换为你的自定义域名
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "chinshiro", // ← 改为你 GitHub 用户名
-  projectName: "TaboQ-theme-docs",
-  themeConfig: {
-    navbar: {
-      title: "TaboQ Theme Docs",
-      items: [
-        { to: "/docs/installation", label: "Docs", position: "left" },
-        { href: "https://tally.so/your-form-id", label: "Support", position: "right" },
-      ],
-    },
-    footer: {
-      copyright: `© ${new Date().getFullYear()} YourBrand. Shopify Theme Partner.`,
-    },
-  },
+  title: 'TaboQ Theme Documentation',
+  tagline: 'Professional Shopify theme for modern stores',
+  url: 'https://docs.taboq.com',
+  baseUrl: '/',
+  organizationName: 'chinshiro',
+  projectName: 'TaboQ-theme-docs',
+
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
-        docs: { sidebarPath: require.resolve("./sidebars.js") },
-        theme: { customCss: require.resolve("./src/css/custom.css") },
+        docs: {
+          routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
       },
     ],
   ],
+
+  themeConfig: {
+    navbar: {
+      title: 'TaboQ Docs',
+      items: [
+        {
+          type: 'doc',
+          docId: 'installation',
+          position: 'left',
+          label: 'Docs',
+        }
+      ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `© ${new Date().getFullYear()} TaboQ Theme`,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
+  },
 };
