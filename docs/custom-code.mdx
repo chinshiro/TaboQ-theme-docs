@@ -1,0 +1,26 @@
+---
+title: Custom Code (Unsupported)
+sidebar_position: 4
+---
+
+# ⚠️ Custom Code Tutorials (Unsupported)
+
+:::danger
+We **do not provide support** for custom code modifications.
+:::
+
+:::tip
+🔸 Always **duplicate your theme** before editing.  
+🔸 Hire a [Shopify Expert](https://experts.shopify.com) if unsure.
+:::
+
+## Add WhatsApp Button
+
+1. Go to **Actions → Edit Code**
+2. Open `Sections/main-product.liquid`
+3. Paste before `{% schema %}`:
+
+```liquid
+<a href="https://wa.me/1234567890?text=I'm%20interested%20in%20{{ product.title }}" class="whatsapp-btn" target="_blank">
+  Contact via WhatsApp
+</a>
