@@ -1,15 +1,15 @@
 module.exports = {
-  title: "MyTheme Documentation",
+  title: "TaboQ Theme Documentation",
   url: "https://docs.taboq.com", // ← 替换为你的自定义域名
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "chinshiro", // ← 改为你 GitHub 用户名
-  projectName: "shopify-theme-docs",
+  projectName: "TaboQ-theme-docs",
   themeConfig: {
     navbar: {
-      title: "MyTheme Docs",
+      title: "TaboQ Theme Docs",
       items: [
         { to: "/docs/installation", label: "Docs", position: "left" },
         { href: "https://tally.so/your-form-id", label: "Support", position: "right" },
